@@ -1,0 +1,23 @@
+<form action="" method="post" />
+ <label for="website">Website URL:</label>
+ <input name="website" id="website" size="50"/>
+ <input type="submit"/>
+</form>
+
+<?php if (!empty($this->parsed)):?>
+
+ <h3><?php echo $this->parsed['title']; ?></h3>
+ <div>
+
+   <?php foreach($this->parsed['image'] as $image): ?>
+      <img src="<?php echo $image;?>" width="100" height="100" style="padding:5px; text-align:left;" />
+   <?php endforeach; ?>
+
+   <p><?php echo $this->parsed['desc']; ?></p>
+
+
+ </div>
+
+<?php endif; ?>
+
+

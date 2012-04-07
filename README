@@ -1,0 +1,5 @@
+ZEND Framework module - Simple web page crawler.
+
+- Can crawl throught API
+- Falls back to standart HTML parsing, if no luck via API
+- Supports: Youtube, Vimeo, Amazon, Ebay
